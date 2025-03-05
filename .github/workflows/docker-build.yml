@@ -19,5 +19,5 @@ jobs:
               uses: docker/build-push-action@v6
               with:
                 file: Dockerfile
-                push: false
-                tags: ${{ vars.DOCKERHUB_USERNAME }}/CICD_test:latest
+                push: true
+                tags: ${{ vars.DOCKERHUB_USERNAME }}/test_CICD:latest
