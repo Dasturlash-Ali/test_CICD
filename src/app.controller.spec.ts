@@ -19,7 +19,7 @@ describe('AppController', () => {
   describe('root', () => {
     it('should return "Hello World!"', () => {
       expect(appController.getHello()).toBe(
-        `Hello World! PORT = 3005`,
+        `Hello World! PORT = 3005 Test`,
       );
     });
   });
