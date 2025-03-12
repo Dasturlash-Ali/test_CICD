@@ -24,7 +24,7 @@ jobs:
                 PORT: ${{ secrets.PORT }}
               run: |
                 ssh-keyscan -H $HOST >> ~/.ssh/known_hosts
-                ssh $USER@HOST "
+                ssh $USER@$HOST "
                   if [ ! -d $APP_DIR ]; then
                     mkdir -p $APP_DIR
                     git clone https://github.com/Dasturlash-Ali/test_CICD.git $APP_DIR
